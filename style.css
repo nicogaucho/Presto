@@ -2,7 +2,87 @@
   font-family: 'Jura', sans-serif;
 }
 
-h1, h2, .h1, .h2{
+h1,
+h2,
+.h1,
+.h2 {
   font-family: 'Righteous', cursive;
 }
+
+body{
+  
+}
+
+:root {
+  --main-color: #2F9C95;
+  --sec-color: #40C9A2;
+  --accent-color: #664147;
+}
+
+
+.text-main {
+  color: var(--main-color);
+}
+
+.text-sec {
+  color: var(--sec-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.bg-sec {
+  background-color: var(--sec-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+/* utilities transform effects */
+
+.text-transform {
+  color: hsl(240, 1%, 21%);
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.text-transform:hover {
+  transform: translateX(4px);
+  color: #40C9A2;
+}
+
+/* side menu transiction */
+
+#mobileMenu{
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  top: 0px;
+  right: -300px;
+  background: linear-gradient(90deg, rgba(64,201,162,1) 18%, rgba(150,225,204,1) 73%, rgba(255,255,255,1) 100%);
+  transition: 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.active-sidebar{
+  right: 0px !important;
+}
+
+/* above the fold  */
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background: radial-gradient(circle, rgba(64,201,162,1) 0%, rgba(153,226,205,1) 0%, rgba(169,230,213,1) 0%, rgba(177,232,217,1) 0%, rgba(255,255,255,1) 92%);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+
 
