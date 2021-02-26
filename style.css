@@ -1,5 +1,9 @@
 * {
-  font-family: 'Jura', sans-serif;
+  font-family: 'Righteous', cursive;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -9,14 +13,11 @@ h2,
   font-family: 'Righteous', cursive;
 }
 
-body{
-  
-}
 
 :root {
-  --main-color: #2F9C95;
-  --sec-color: #40C9A2;
-  --accent-color: #664147;
+  --main-color: #140D4F;
+  --sec-color: #315A74;
+  --accent-color: #8c1a6a;
 }
 
 
@@ -53,7 +54,7 @@ body{
 
 .text-transform:hover {
   transform: translateX(4px);
-  color: #40C9A2;
+  color: var(--sec-color);
 }
 
 /* side menu transiction */
@@ -64,9 +65,10 @@ body{
   height: 100vh;
   top: 0px;
   right: -300px;
-  background: linear-gradient(90deg, rgba(64,201,162,1) 18%, rgba(150,225,204,1) 73%, rgba(255,255,255,1) 100%);
+  background-color: var(--sec-color);
   transition: 0.5s ease-in-out;
   z-index: 9999;
+  color: white;
 }
 
 .active-sidebar{
@@ -76,12 +78,113 @@ body{
 /* above the fold  */
 
 .masthead {
-  height: 100vh;
+  height: 80vh;
   min-height: 500px;
-  background: radial-gradient(circle, rgba(64,201,162,1) 0%, rgba(153,226,205,1) 0%, rgba(169,230,213,1) 0%, rgba(177,232,217,1) 0%, rgba(255,255,255,1) 92%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(49,90,116,0.60) 50%, rgba(255,255,255,1) 99%);
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) { 
+  .masthead {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(49,90,116,0.9206057422969187) 50%, rgba(255,255,255,1) 99%);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+ }
+
+ .btn-custom {
+   background-color: var(--accent-color);
+   color: white;
+   border-radius: 30px;
+   padding: 10px 20px;
+ }
+
+.card-counter{
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.card-annuncement{
+  height: 15rem;
+  width: 15rem;
+  border: 1px solid var(--main-color);
+}
+
+.card-annuncement-mac {
+  height: 18rem;
+  width: 18rem;
+  border: none;
+  background-image: linear-gradient(rgba(255,255,255,0.7), transparent, white), url('./media/mac.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  border-top: 4px solid var(--main-color);
+}
+
+.card-annuncement-silla {
+  height: 18rem;
+  width: 18rem;
+  border: none;
+  background-image: linear-gradient(rgba(255,255,255,0.7), transparent, white), url('./media/silla.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  border-top: 4px solid var(--main-color);
+}
+.bordo-img {
+  border: 3px solid var(--main-color);
+  padding: 4px;
+}
+
+.anuncio {
+  height: 100vh;
+  min-height: 500px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(40,90,116,0.9206057422969187) 50%, rgba(255,255,255,1) 99%);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.bordo{
+  border-bottom: 2px solid var(--main-color) !important;
+}
+
+.bordo-subscribe{
+  border-bottom: 1px solid var(--sec-color) !important;
+}
+
+
+.borderLeftRight {
+  display: inline-block;
+  position: relative;
+}
+
+.borderLeftRight::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--accent-color);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.borderLeftRight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.lista{
+  height: 40px;
+  width: 40px;
 }
 
 

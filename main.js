@@ -22,7 +22,7 @@ document.addEventListener('scroll', () => {
 // sidebar mobile
 
 let sidebar = document.querySelector('#sidebar');
-let mobileMenu = document.querySelector('#mobileMenu')
+let mobileMenu = document.querySelector('#mobileMenu');
 sidebar.addEventListener('click', () =>{
   mobileMenu.classList.add('active-sidebar')
 });
@@ -32,7 +32,33 @@ mobileMenu.addEventListener('click', ()=> {
 });
 
 
+// counter
+let counterValores = {
+  'Delivery': 21,
+  'Annucios': 99,
+  'Easy-buy': 121,
+  'Confirmed': 120
+};
 
+
+let parejasValores = Object.entries(counterValores);
+
+//console.log(parejasValores);
+
+parejasValores.forEach(el => {
+  let elemento = document.querySelector(`[data-counter="${el[0]}"]`);
+  let time = 800 / el[1];
+  let i = 0;
+  elemento.innerHTML = i;
+
+  let inteval = setInterval(() => {
+    i++
+    elemento.innerHTML = i
+    if (i >= el[1]) {
+      clearInterval(inteval);
+    }
+  }, time);
+}); 
 
  
  

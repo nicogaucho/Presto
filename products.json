@@ -1,0 +1,244 @@
+[
+  {
+    "id":1,
+    "name":"iphone8",
+    "category":"informatica",
+    "price":"200"
+  },
+  {
+    "id":2,
+    "name":"fiat500",
+    "category":"motores",
+    "price":"2400"
+  },
+  {
+    "id":3,
+    "name":"camiseta RealMadrid",
+    "category":"deporte",
+    "price":"80"
+  },
+  {
+    "id":4,
+    "name":"RollingStones album",
+    "category":"musica",
+    "price":"120"
+  },
+  {
+    "id":5,
+    "name":"calzoncinos Kappa",
+    "category":"ropas",
+    "price":"30"
+  },
+  {
+    "id":6,
+    "name":"silla moderna",
+    "category":"interior",
+    "price":"200"
+  },
+  {
+    "id":7,
+    "name":"samsung8",
+    "category":"informatica",
+    "price":"250"
+  },
+  {
+    "id":8,
+    "name":"galaxyA6",
+    "category":"informatica",
+    "price":"500"
+  },
+  {
+    "id":9,
+    "name":"adidas pantalones",
+    "category":"ropas",
+    "price":"50"
+  },
+  {
+    "id":10,
+    "name":"mesa larga",
+    "category":"interior",
+    "price":"300"
+  },
+  {
+    "id":11,
+    "name":"iphone5",
+    "category":"informatica",
+    "price":"120"
+  },
+  {
+    "id":12,
+    "name":"kavasaki600",
+    "category":"motores",
+    "price":"1200"
+  },
+  {
+    "id":13,
+    "name":"cd jonh mayer",
+    "category":"musica",
+    "price":"80"
+  },
+  {
+    "id":14,
+    "name":"huawai 5",
+    "category":"informatica",
+    "price":"300"
+  },
+  {
+    "id":15,
+    "name":"barca camiseta",
+    "category":"deporte",
+    "price":"90"
+  },
+  {
+    "id":16,
+    "name":"macbook pro 13 usado",
+    "category":"informatica",
+    "price":"500"
+  },
+  {
+    "id":17,
+    "name":"silla por interno",
+    "category":"interior",
+    "price":"130"
+  },
+  {
+    "id":18,
+    "name":"betis camiseta en buen estado",
+    "category":"deporte",
+    "price":"200"
+  },
+  {
+    "id":19,
+    "name":"daft punk cd usado",
+    "category":"musica",
+    "price":"35"
+  },
+  {
+    "id":20,
+    "name":"hp usado 256mb",
+    "category":"informatica",
+    "price":"350"
+  },
+  {
+    "id":21,
+    "name":"ford kuga segunda mano",
+    "category":"motores",
+    "price":"3200"
+  },
+  {
+    "id":22,
+    "name":"ford fiesta buen estado",
+    "category":"motores",
+    "price":"3000"
+  },
+  {
+    "id":23,
+    "name":"macbook air 126g",
+    "category":"informatica",
+    "price":"700"
+  },
+  {
+    "id":24,
+    "name":"pink floyd album 1992",
+    "category":"musica",
+    "price":"45"
+  },
+  {
+    "id":25,
+    "name":"iphoneX",
+    "category":"informatica",
+    "price":"550"
+  },
+  {
+    "id":26,
+    "name":"iwatch apple",
+    "category":"informatica",
+    "price":"150"
+  },
+  {
+    "id":27,
+    "name":"zapatos nuevos futbol",
+    "category":"deporte",
+    "price":"70"
+  },
+  {
+    "id":28,
+    "name":"planta",
+    "category":"interior",
+    "price":"20"
+  },
+  {
+    "id":29,
+    "name":"huawaiX",
+    "category":"informatica",
+    "price":"340"
+  },
+  {
+    "id":30,
+    "name":"reloj como nuevo casio",
+    "category":"ropas",
+    "price":"40"
+  },
+  {
+    "id":31,
+    "name":"pantalones lee nuevos",
+    "category":"ropas",
+    "price":"35"
+  },
+  {
+    "id":32,
+    "name":"cd maluma segunda mano",
+    "category":"musica",
+    "price":"20"
+  },
+  {
+    "id":33,
+    "name":"samsumg galaxy A8",
+    "category":"informatica",
+    "price":"135"
+  },
+  {
+    "id":34,
+    "name":"gafas persol nuevas",
+    "category":"ropas",
+    "price":"80"
+  },
+  {
+    "id":35,
+    "name":"sofa usado",
+    "category":"interior",
+    "price":"165"
+  },
+  {
+    "id":36,
+    "name":"lenovo x665",
+    "category":"informatica",
+    "price":"650"
+  },
+  {
+    "id":37,
+    "name":"real madrid borra como nueva",
+    "category":"deporte",
+    "price":"15"
+  },
+  {
+    "id":38,
+    "name":"fiat doblo",
+    "category":"motores",
+    "price":"1250"
+  },
+  {
+    "id":39,
+    "name":"scooter piaggio usado",
+    "category":"motores",
+    "price":"600"
+  },
+  {
+    "id":40,
+    "name":"macbook air segunda mano",
+    "category":"informatica",
+    "price":"600"
+  }
+]
+
+
