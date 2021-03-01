@@ -1,5 +1,4 @@
 // scroll navbar effects 
-
 document.addEventListener('scroll', () => {
   let nav = document.querySelector('#navbar')
   let logo = document.querySelector('#logo')
@@ -18,9 +17,7 @@ document.addEventListener('scroll', () => {
 });
 
 
-
 // sidebar mobile
-
 let sidebar = document.querySelector('#sidebar');
 let mobileMenu = document.querySelector('#mobileMenu');
 sidebar.addEventListener('click', () =>{
@@ -42,6 +39,11 @@ let counterValores = {
 
 
 let parejasValores = Object.entries(counterValores);
+
+/* ['delivey', 21] , el[0] => 'delivey'
+['Annucios', 99]
+['Easy-buy', 121]
+['Confimed', 120] */
 
 //console.log(parejasValores);
 

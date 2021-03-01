@@ -238,6 +238,66 @@
     "name":"macbook air segunda mano",
     "category":"informatica",
     "price":"600"
+  },
+  {
+    "id":41,
+    "name":"fender x230",
+    "category":"musica",
+    "price":"135"
+  },
+  {
+    "id":42,
+    "name":"iphod music",
+    "category":"informatica",
+    "price":"40"
+  },
+  {
+    "id":43,
+    "name":"ford kuga en buen estado",
+    "category":"motores",
+    "price":"1235"
+  },
+  {
+    "id":44,
+    "name":"mocilla ripcurl nuevo",
+    "category":"ropas",
+    "price":"45"
+  },
+  {
+    "id":45,
+    "name":"mesa nueva para jardin",
+    "category":"interior",
+    "price":"100"
+  },
+  {
+    "id":46,
+    "name":"bicicleta g-nex",
+    "category":"deporte",
+    "price":"230"
+  },
+  {
+    "id":47,
+    "name":"macbook Pro 16 pulgadas",
+    "category":"informatica",
+    "price":"1000"
+  },
+  {
+    "id":48,
+    "name":"pelota manchester united",
+    "category":"deporte",
+    "price":"20"
+  },
+  {
+    "id":49,
+    "name":"camiseta avengers",
+    "category":"ropas",
+    "price":"30"
+  },
+  {
+    "id":50,
+    "name":"flauta samsung",
+    "category":"musica",
+    "price":"40"
   }
 ]
 

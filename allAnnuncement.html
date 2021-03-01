@@ -29,6 +29,8 @@
     .fondo-footer {
       background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(198, 209, 216, 1) 76%, rgba(140, 163, 177, 1) 100%);
     }
+
+    
   </style>
   <title>Presto</title>
 </head>
@@ -86,7 +88,7 @@
   </header>
 
 
-  <div class="container my-5 py-5">
+  <div class="container my-5 py-5 containerPorSpinner">
     <div class="row">
       <div class="col-12 col-md-3">
         <h5 class="text-main">Filtros por:</h5>
@@ -139,6 +141,19 @@
                 <p>todos los anuncios</p>
               </label>
             </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <button class="btn bordo-subscribe rounded-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#nombreAnuncio" aria-expanded="false" aria-controls="nombreAnuncio">
+              <span class="text-accent">Filtra por lo que quieres</span>
+            </button>
+          </p>
+          <div class="collpse" id="nombreAnuncio">
+
+            <input class="form-control" type="text" placeholder="que buscaa.." aria-label="default input example">
+
           </div>
         </div>
       </div>
@@ -243,6 +258,7 @@
     let categoriesWrapper = document.querySelector('#categoriesWrapper')
     let productsWrapper = document.querySelector('#productsWrapper')
     let priceWrapper = document.querySelector('#priceWrapper')
+    let nombreAnuncio = document.querySelector('#nombreAnuncio')
 
 
     fetch('./products.json')
@@ -278,50 +294,68 @@
 
 
         let filters = document.querySelectorAll('[name="categories"]')
-        filters.forEach( el =>{
-          el.addEventListener('click', ()=>{
+        filters.forEach(el => {
+          el.addEventListener('click', () => {
             let checked = el.id;
             let filteredProds = products.filter(el => {
-             return el.category == checked;
+              return el.category == checked;
             })
             showProds(filteredProds);
           })
         })
 
         let all = document.querySelector('#all')
-        all.addEventListener('click', () =>{
+        all.addEventListener('click', () => {
           showProds(products);
         })
-        
+
 
         let priceCheck1 = document.querySelector('#priceCheck1')
-        priceCheck1.addEventListener('click', ()=>{
-          let filterCheck1 = products.filter( el => el.price <= 100).sort((a,b) => a.price - b.price);
+        priceCheck1.addEventListener('click', () => {
+          let filterCheck1 = products.filter(el => el.price <= 100).sort((a, b) => a.price - b.price);
           showProds(filterCheck1);
         })
 
         let priceCheck2 = document.querySelector('#priceCheck2')
-        priceCheck2.addEventListener('click', ()=>{
-          let filterCheck2 = products.filter( el => el.price > 100 && el.price <= 300).sort((a,b) => a.price - b.price);
+        priceCheck2.addEventListener('click', () => {
+          let filterCheck2 = products.filter(el => el.price > 100 && el.price <= 300).sort((a, b) => a.price - b
+            .price);
           showProds(filterCheck2);
         })
 
         let priceCheck3 = document.querySelector('#priceCheck3')
-        priceCheck3.addEventListener('click', ()=>{
-          let filterCheck3 = products.filter( el => el.price > 300 && el.price <= 600).sort((a,b) => a.price - b.price);
+        priceCheck3.addEventListener('click', () => {
+          let filterCheck3 = products.filter(el => el.price > 300 && el.price <= 600).sort((a, b) => a.price - b
+            .price);
           showProds(filterCheck3);
         })
 
         let priceCheck4 = document.querySelector('#priceCheck4')
-        priceCheck4.addEventListener('click', ()=>{
-          let filterCheck4 = products.filter( el => el.price > 600 && el.price <= 1000).sort((a,b) => a.price - b.price);
+        priceCheck4.addEventListener('click', () => {
+          let filterCheck4 = products.filter(el => el.price > 600 && el.price <= 1000).sort((a, b) => a.price - b
+            .price);
+          console.log(filterCheck4);
           showProds(filterCheck4);
         })
 
         let priceCheck5 = document.querySelector('#priceCheck5')
-        priceCheck5.addEventListener('click', ()=>{
+        priceCheck5.addEventListener('click', () => {
           showProds(products);
         })
+
+
+
+
+        nombreAnuncio.addEventListener('keyup', (e) => {
+         
+          setTimeout(() => {
+            let value = e.target.value;
+            let onlyNames = products.filter(el => el.name.match(value));
+            showProds(onlyNames);
+          }, 3000);
+
+        })
+
 
 
         function showProds(prods) {
@@ -333,7 +367,7 @@
               `
                 <div class="card card-annuncement mx-auto shadow">
                   <div class="card-body">
-                    <p class="card-title text-main lead" title="${el.name}">${el.name.substring(0,12)} ...</p>
+                    <p class="card-title text-main lead" title="${el.name}">${el.name}</p>
                     <p class="card-text text-sec">${el.category}</p>
                     <p class="card-text text-sec">${el.price} €</p>
                   </div>
